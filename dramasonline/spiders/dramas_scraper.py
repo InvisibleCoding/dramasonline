@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
 import scrapy
-from dramasonline.items import DramasonlineItem
+from dramaonline.items import DramaonlineItem
 
 class DramasScraperSpider(scrapy.Spider):
     name = "dramas_scraper"
-    allowed_domains = ["dramasonline.com"]
+    allowed_domains = ["dramaonline.pk"]
     start_urls = [
-        'http://www.dramasonline.com/hum-tv-latest-dramas-episodes-online/',
-        'http://www.dramasonline.com/geo-tv-latest-dramas-episodes-online/',
-        'http://www.dramasonline.com/ary-digital-tv-latest-dramas-episodes-online/'
+        'http://dramaonline.pk/hum-tv-latest-dramas-episodes/',
+        'http://dramaonline.pk/geo-tv-latest-dramas-episodes/',
+        'http://dramaonline.pk/ary-digital-latest-dramas-episodes/'
         #'http://www.dramasonline.com/category/ary-digital-dramas/bulbulay/',
     ]
 
